@@ -33,11 +33,48 @@ display: flex;
     color:brown;
     background-color:white;
 }
-#reset-btn{
-    padding:1rem;
+
+#msg{
+    color:white;
+    font-size: 5vmin;
+}
+msgcontainer{
+    height: 30vmin;
+    
+}
+
+.hide{
+    display: none;
+}
+
+#resetbtn {
+    padding: 1rem;
+    margin-right: 1rem;
     font-size: 1.25rem;
     background-color: red;
-    color:white;
+    color: white;
     border-radius: 1rem;
-    border:none;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#resetbtn:hover {
+    background-color: darkred;
+   
+}
+
+#newbtn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: green;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+ 
+}
+
+#newbtn:hover {
+    background-color: darkgreen;
+ 
 }
