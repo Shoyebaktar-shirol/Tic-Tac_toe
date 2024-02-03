@@ -88,3 +88,9 @@ const checkWinner = () => {
         }
     }
 };
+
+ function openInstructions() {
+        window.open('instructions.html', '_blank');
+      }
+
+         

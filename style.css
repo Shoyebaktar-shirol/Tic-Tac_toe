@@ -38,7 +38,7 @@ display: flex;
     color:white;
     font-size: 5vmin;
 }
-msgcontainer{
+#msgcontainer{
     height: 30vmin;
     
 }
@@ -77,4 +77,11 @@ msgcontainer{
 #newbtn:hover {
     background-color: darkgreen;
  
+}
+
+
+
+.instructions:hover {
+    background-color: #ffcc00;
+    /* Lighter shade of yellow on hover, feel free to remove this line if you don't want any hover effect */
 }
