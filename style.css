@@ -1,49 +1,45 @@
-
-
-body
-{
-    background-color:black;
+body {
+    background-color: white;
 }
 
-.container{
-    height:70vh;
-display: flex;
+.container {
+    height: 70vh;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.game{
-    height:60vmin;
+.game {
+    height: 60vmin;
     width: 60vmin;
     display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5vmin;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
 }
 
-.box{
-    height:18vmin;
-    width:18vmin;
+.box {
+    height: 18vmin;
+    width: 18vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0, 3);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
-    color:brown;
-    background-color:white;
+    color: brown;
+    background-color: white;
 }
 
-#msg{
-    color:white;
+#msg {
+    color: white;
     font-size: 5vmin;
 }
-#msgcontainer{
+
+#msgcontainer {
     height: 30vmin;
-    
 }
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -60,7 +56,6 @@ display: flex;
 
 #resetbtn:hover {
     background-color: darkred;
-   
 }
 
 #newbtn {
@@ -71,20 +66,88 @@ display: flex;
     border-radius: 1rem;
     border: none;
     transition: background-color 0.3s ease;
- 
 }
 
 #newbtn:hover {
     background-color: darkgreen;
- 
 }
-
-
 
 .instructions:hover {
     background-color: #ffcc00;
-    /* Lighter shade of yellow on hover, feel free to remove this line if you don't want any hover effect */
 }
 
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+}
+
+#resetbtn,
+#newbtn {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#instructions button {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .game {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+
+    #resetbtn,
+    #newbtn {
+        font-size: 14px;
+    }
+
+    #instructions button {
+        font-size: 14px;
+    }
+}
