@@ -1,64 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-Tac-Toe Game</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .game {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        font-size: 18px;
+      }
+
+      #resetbtn,
+      #newbtn {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      #instructions button {
+        font-size: 16px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: black;
+        background-color: white;
+        padding: 10px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .game {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .box {
+          width: 80px;
+          height: 80px;
+          font-size: 14px;
+        }
+
+        #resetbtn,
+        #newbtn {
+          font-size: 14px;
+        }
+
+        #instructions button {
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <br>
-  <div class="msgcontainer hide ">
-    <center><p id="msg">Winner</p></center>
-</div>
+    <div class="msgcontainer hide">
+      <center><p id="msg">Winner</p></center>
+    </div>
 
     <main>
-    <center><h1 style="color: white;">Tic-Tac-Toe</h1></center>
+      <center><h1>Tic-Tac-Toe</h1></center>
 
-      <div class = "container">
-      <div class="game">
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
       </div>
-      </div>
-     <center>
-    <div>
-        <button id="resetbtn">Reset Game</button>
-        <button id="newbtn">New Game</button>
-    </div>
-</center>
-<br>
-<br>
+      <center>
+        <div>
+          <button id="resetbtn">Reset Game</button>
+          <button id="newbtn">New Game</button>
+        </div>
+      </center>
+      <br />
+      <br />
 
-    <center><div id ="instructions">
-      <button onclick="openInstructions()">How To Play ?</button>
-    </div></center>
-<br><br><br><br>
+      <center>
+        <div id="instructions">
+          <button onclick="openInstructions()">How To Play ?</button>
+        </div>
+      </center>
+      <br /><br /><br /><br />
 
-
-
-
-
-    
-       
-  
-        <center><footer>
-      <p style = "color: black; background-color: white;"><br>&copy; 2024 Tic Tac Toe Game developed by Shoyebaktar<br><br></p>
-    </footer></center>
-       
-       
-
-   
- 
-
+      <center>
+        <footer>
+          <p>&copy; 2024 Tic Tac Toe Game developed by Shoyebaktar</p>
+        </footer>
+      </center>
     </main>
-    <script src = "app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

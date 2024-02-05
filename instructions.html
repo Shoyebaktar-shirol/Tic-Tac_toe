@@ -5,8 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe Instructions</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      .instructions-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        color: #333;
+      }
+
+      .section {
+        margin-top: 20px;
+      }
+
+      p {
+        color: #666;
+        line-height: 1.5;
+      }
+
+      .section h2 {
+        color: #009688;
+        border-bottom: 2px solid #009688;
+        padding-bottom: 5px;
+      }
+
+      .section p:last-child {
+        margin-bottom: 0;
+      }
+
+      .section:last-child {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .section:last-child a {
+        color: #009688;
+        text-decoration: underline;
+      }
+
+      .instructions-container {
+        font-size: 16px;
+      }
+
+      .section p {
+        margin-bottom: 10px;
+      }
+
+      /* Media queries for responsiveness */
+      @media only screen and (max-width: 600px) {
+        .instructions-container {
+          font-size: 14px;
+          padding: 15px;
+        }
+      }
+
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        .instructions-container {
+          font-size: 15px;
+          padding: 18px;
+        }
+      }
+
+      /* You can add more media queries as needed */
+    </style>
   </head>
   <body>
+    <!-- Your existing HTML content -->
+
     <div class="instructions-container">
       <center><h1>Tic Tac Toe Game Instructions</h1></center>
       <section class="section">
@@ -69,64 +147,7 @@
         </p>
       </section>
     </div>
-    <style>
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-      }
 
-      .instructions-container {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      h1,
-      h2 {
-        color: #333;
-      }
-
-      .section {
-        margin-top: 20px;
-      }
-
-      p {
-        color: #666;
-        line-height: 1.5;
-      }
-
-      .section h2 {
-        color: #009688;
-        border-bottom: 2px solid #009688;
-        padding-bottom: 5px;
-      }
-
-      .section p:last-child {
-        margin-bottom: 0;
-      }
-
-      .section:last-child {
-        background-color: #f9f9f9;
-        padding: 15px;
-        border-radius: 8px;
-      }
-
-      .section:last-child a {
-        color: #009688;
-        text-decoration: underline;
-      }
-
-      .instructions-container {
-        font-size: 16px;
-      }
-
-      .section p {
-        margin-bottom: 10px;
-      }
-    </style>
+    <script src="app.js"></script>
   </body>
 </html>

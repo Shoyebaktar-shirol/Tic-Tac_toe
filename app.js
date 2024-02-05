@@ -28,7 +28,7 @@ const resetGame = () => {
 
 const newGame = () => {
     resetGame();
-    // Add any additional logic needed to start a new game
+   
 };
 
 // LOGIC
@@ -55,7 +55,7 @@ newbtn.addEventListener("click", () => {
     newGame();
 });
 
-const disableBoxes = () => {
+const disableBoxes = () => {//Disabling he boxes
     for (let box of boxes) {
         box.disabled = true;
     }
@@ -90,7 +90,7 @@ const checkWinner = () => {
 };
 
  function openInstructions() {
-        window.open('instructions.html', '_blank');
+        window.open('instructions.html', '_blank'); //connecting the file called instructions
       }
 
          
